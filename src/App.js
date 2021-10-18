@@ -124,14 +124,14 @@ const handleLook = (id) => {
 
 
   return (
-    <Router>
+    <Router basename='/'>
       <Helmet>
         <title>My Shopping Cart</title>
         <meta name="description" content="shopping cart" />
     </Helmet>
      <Nav amount={amount} />
       <Switch>
-      <Route exact path="/shopping-cart">
+      <Route exact path="/">
           <Home />
         </Route>
 
@@ -151,6 +151,9 @@ const handleLook = (id) => {
     </Router>
   );
 };
+
+
+
 
 export default App;
 
